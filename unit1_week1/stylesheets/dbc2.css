@@ -1,0 +1,82 @@
+div {
+	border-radius: 5px;
+}
+#header {
+	height: 300px;
+	width: 100%;
+	margin-top: 0px;
+	margin-left: -5px;
+	padding:0px 0px 20px 0px;
+	display: inline-block;
+	background: url(../images/boquerones.jpg) no-repeat center;
+	border: 5px solid white;
+}
+
+#footer {
+	height: 40px;
+	width: 1250px;
+	margin-bottom: -40px;
+	display: block;
+	background-color: black;
+	display: inline-block;
+	margin-left: -5px;
+	position: fixed;
+	bottom: 1px;
+}
+
+#sidebar {
+	height: 1534px;
+	width: 140px;
+	margin: 0px 0px 0px 5px;
+	padding: 50px 10px 10px 0px;
+	display: block;
+	background-color: white;
+	float: left;
+}
+
+
+#content {
+	height: 1200px;
+	width: 600px;
+	margin: 0px 0px 0px 150px;
+	background-color: white;
+	padding: 65px 5px 80px 160px;
+	display: block;
+	float: center;
+}
+h1 {
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-family: sans-serif;
+	font: 25px;
+}
+
+p {
+	font: 15px;
+	font-family: sans-serif;
+	color: black;
+}
+
+span {
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif
+}
+
+table {
+	margin: auto;
+}
+
+
+.name {
+	text-align: center;
+	color: #FFFFFF;
+	font: 80px white "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a:link {color:#000000;}
+a:visited {color:#0000FF;}  
+a:hover {color:#FF0000;}
+a:active {color:#000000;} 
