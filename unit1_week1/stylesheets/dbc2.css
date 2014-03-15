@@ -14,24 +14,25 @@ div {
 
 #footer {
 	height: 40px;
-	width: 1250px;
-	margin-bottom: -40px;
+	width: 100%;
+	margin-bottom: 0px;
 	display: block;
 	background-color: black;
 	display: inline-block;
 	margin-left: -5px;
 	position: fixed;
-	bottom: 1px;
+	bottom: -5px;
 }
 
 #sidebar {
-	height: 1534px;
+	height: 100%;
 	width: 140px;
 	margin: 0px 0px 0px 5px;
 	padding: 50px 10px 10px 0px;
 	display: block;
 	background-color: white;
 	float: left;
+	border-right: black solid 4px;
 }
 
 
@@ -66,7 +67,10 @@ span {
 }
 
 table {
-	margin: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width:400px;
 }
 
 
@@ -76,6 +80,18 @@ table {
 	font: 80px white "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+.foot {
+	display: inline-block;
+	margin: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.foot1 {
+	display: block;
+	margin: 4px;
+	margin-left: 700px;
+	margin-right: 700px;
+}
 a:link {color:#000000;}
 a:visited {color:#0000FF;}  
 a:hover {color:#FF0000;}
