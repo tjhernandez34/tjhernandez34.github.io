@@ -96,3 +96,8 @@ table {
 	font-family: sans-serif;
 	font-family: 'Trade Winds', cursive;
 }
+
+a:link {color:#000000;} 
+a:visited {color:#00FF00;}  
+a:hover {color:#FF00FF;}  
+a:active {color:#000000;}
