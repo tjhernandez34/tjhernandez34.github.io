@@ -67,6 +67,12 @@ body {
 
 #things {
 	margin: auto;
+<<<<<<< HEAD
+=======
+}
+#bioC {
+	
+>>>>>>> FETCH_HEAD
 }
 #bioC {
 	
@@ -75,6 +81,12 @@ body {
 #bioT {
 	}
 
+<<<<<<< HEAD
+=======
+#bioT {
+	}
+
+>>>>>>> FETCH_HEAD
 #bioH {
 	
 }
@@ -84,9 +96,15 @@ body {
 }
 #favoritesC {
 	
+<<<<<<< HEAD
 }
 #interestsC {
 }
+=======
+}
+#interestsC {
+}
+>>>>>>> FETCH_HEAD
 .photo {
 
 }
@@ -106,8 +124,17 @@ img {
 }
 #copyright {
 	margin-left: 42%;
+<<<<<<< HEAD
 }
 
 a {
 	color: white
 }
+=======
+}
+
+a {
+	color: white
+}
+
+>>>>>>> FETCH_HEAD
