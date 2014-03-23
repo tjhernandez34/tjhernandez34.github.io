@@ -24,9 +24,19 @@ body {
 	position: fixed;
 }
 #subheader {
-	width:100%;
+	width:110%;
 	height:200px;
 	background-color: rgb(152, 172, 122);
+}
+#hiddenMenu {
+	position: relative;
+	display: block;
+	list-style: none;
+}
+
+a:hover + #hiddenMenu {
+    display: block;
+    clear: both;
 }
 
 #baker {
@@ -67,46 +77,6 @@ body {
 
 #things {
 	margin: auto;
-<<<<<<< HEAD
-=======
-}
-#bioC {
-	
->>>>>>> FETCH_HEAD
-}
-#bioC {
-	
-}
-
-#bioT {
-	}
-
-<<<<<<< HEAD
-=======
-#bioT {
-	}
-
->>>>>>> FETCH_HEAD
-#bioH {
-	
-}
-
-#aboutMeC {
-	
-}
-#favoritesC {
-	
-<<<<<<< HEAD
-}
-#interestsC {
-}
-=======
-}
-#interestsC {
-}
->>>>>>> FETCH_HEAD
-.photo {
-
 }
 
 .footer {
@@ -124,17 +94,22 @@ img {
 }
 #copyright {
 	margin-left: 42%;
-<<<<<<< HEAD
 }
-
 a {
-	color: white
-}
-=======
+	color: white;
 }
 
-a {
-	color: white
+.singlePics {
+	margin-left: 30%;
+	margin-top:30px;
+}
+#pulpo {
+	margin-left: 25%;
+	margin-top: 30px;
 }
 
->>>>>>> FETCH_HEAD
+.info {
+	padding: 40px;
+	margin: auto;
+	margin-bottom: 30px;
+}
