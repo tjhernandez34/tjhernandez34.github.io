@@ -22,22 +22,51 @@ body {
 	margin-top: -15px;
 	background-color: rgb(16, 60, 21);
 	position: fixed;
+	display: inline;
 }
 #subheader {
 	width:110%;
 	height:200px;
 	background-color: rgb(152, 172, 122);
 }
-#hiddenMenu {
+
+#hiddenMenu ul {
+	display: none;
+}
+#hiddenMenu ul li {
+	float: left;
 	position: relative;
-	display: block;
+}
+#hiddenMenu ul li:hover > ul {
+	display: block
+}
+#hiddenMenu {
+	padding: 0px;
 	list-style: none;
+	position: relative;
+	display: none;
+}
+/*#hiddenMenu {
+	position: relative;
+	display: none;
+	list-style: none;
+	float: left;
 }
 
 a:hover + #hiddenMenu {
     display: block;
-    clear: both;
-}
+    position: absolute;
+	border-right: 3px solid #ffffff;
+	border-left: 3px solid #ffffff;
+	font-family: 'Trade Winds', cursive;
+	color: #ffffff;
+	background-color: rgb(16, 60, 21);
+	font-size: 15px;
+	float: left;
+	margin: auto;
+	list-style: none;
+	clear: both;
+}*/
 
 #baker {
 	margin-top: -95px;
