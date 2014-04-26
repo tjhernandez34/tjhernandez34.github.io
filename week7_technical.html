@@ -11,8 +11,8 @@
         <li class="topLinks"><a href="http://tjhernandez34.github.io/index.html">About Me</a></li> <!--About Me-->
         <li class="topLinks"><a href="http://tjhernandez34.github.io/index.html">Contact Info</a></li> <!--Contact Me-->
         <li class="topLinks"><a href="http://tjhernandez34.github.io/index.html">Photos</a></li> <!--photos-->
-        <li class="topLinks"><a href="http://tjhernandez34.github.io/week6_cultural_blog.html">Cultural Blog</a>
-        <li class="topLinks"><a href="http://tjhernandez34.github.io/week6_technical.html">Technical Blog</a>
+        <li class="topLinks"><a href="http://tjhernandez34.github.io/week7_cultural_blog.html">Cultural Blog</a>
+        <li class="topLinks"><a href="http://tjhernandez34.github.io/week7_technical.html">Technical Blog</a>
             <!--<ul id="hiddenMenu">
                 <li><a href="http://tjhernandez34.github.io/week2_technical.html">Technical</a></li>
                 <li><a href="http://tjhernandez34.github.io/week2_cultural_blog.html">Cultural</a></li>
@@ -21,6 +21,23 @@
         <li class="topLinks"><a href="http://tjhernandez34.github.io/index.html">Home</a></li> <!--Home-->
       </ul>
     </div>
+<div class="content">
+<div class="info">
+  <h3>April 26, 2014</h3>
+<h1>SQL Issues: SQL Injection</h1>
+<p>SQL Injection is a way of exploiting web applications using SQL databases by inserting new SQL command lines into the existing SQL command lines through the web application, where the user can enter fields of text to be uploaded to the SQL database. The inserted lines are then run through the normal sequence of the current SQL. This enables the attacker to run whichever command line SQL queries that they want through the web application of the SQL database.</p>
+<p>This creates a huge problem because SQL commands are considered safe by most security models of websites. This allows an attacker to change or manipulate the queries being run by the program, which can alter or even destroy the SQL data that is contained within the table being accessed. In worst case scenarios, this technique will give attackers access to confidential or sensitive information; social security numbers, etc.
+A few ways that you can prevent SQL Injection from occurring are as follows:</p>
+<p>-A programmer can set very specific parameters for the data that is being input, ie length, type, syntax.</p>
+<p>-Provide users of the SQL database the lowest level of security clearance within the system, and also only allow a specific user to access the specific application that they are using rather than access to the entire system.</p>
+<p>-Following this, disable all stored procedures when they are not in use.</p>
+<p>Let’s take a look at the differences at two main types of Query Languages, SQL and NoSQL.</p>
+<img src="https://farm3.staticflickr.com/2903/14017653181_4c88bf6c3f_z.jpg"/>
+<p>I feel like I would prefer to be working with SQL databases because their structure seems more rigid, and therefore I would imagine it is easier to maintain and use. The NoSQL databases seem a little bit more abstract and versatile, but with these two attributes comes less defined rules, which to me means less clear ways to fix problems that arise with the structure you have created. Another reason I am more interested in using SQL Databases is because I just see a lot more practicality in them. Most of the data we use and view is in tables, and they have the same attributes for each individual occurrence. Therefore, I would prefer to work with something I can see myself not only understanding better, but using frequently.</p>
+<h3>Query Optimization</h3>
+<p>When addressing the problem of query optimization for large data sets, there are a few tips and tricks that one can use to relieve pressures put on the system. Each table item should have a unique ID specific to that line, when you run a query on a particular group, you can save that output which corresponds to the query for that data set, then when your data increases you can run a query on the additional data and add it to the previous query. This prevents the query from retracing through a dataset that it has already created an answer for. This enables the program to finish faster and take up less computational resources on the server. Another way to avoid stressing the system is to use constants in your queries, this enables the computer to bypass the need to scan every individual item searching for matching text, values, etc.</p>
+</div>
+</div>
 <div class="content">
 <div class="info">
     <h3>April 19, 2014</h3>
