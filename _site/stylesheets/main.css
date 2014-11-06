@@ -67,9 +67,7 @@ font-family: 'Average Sans', sans-serif;
 }
 
 #contact ul {
-  /*width: 41%;*/
-  padding-top: 1em;
-  text-align: center;
+  width: 41%;
   margin: 0 auto;
 }
 
@@ -81,7 +79,7 @@ font-family: 'Average Sans', sans-serif;
 
 .contact_icon {
   height: 5em;
-  /*margin: 1.5em;*/
+  margin: 1.5em;
   border-radius: 100%;
 }
 
