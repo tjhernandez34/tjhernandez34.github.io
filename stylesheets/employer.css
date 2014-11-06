@@ -1,0 +1,35 @@
+#image_background {
+  background: url(../images/DSCF1825.JPG) 50% 0 repeat fixed; 
+  min-height: 1000px; 
+  background-size: 100% auto;
+/*  height: 1000px;*/ 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  }
+
+.cover_letter_article {
+	width: 20em;
+  font-size: 1.5em;
+  margin-left: 30em;
+
+}
+
+.cover_letter_article h2 {
+	text-align: center;
+	margin-top: 12em;
+	margin-bottom: 8em;
+	color: white;
+  font-family: sans-serif;
+	opacity: 1;
+}
+
+.cover_letter_article p {
+	margin-top: 5em;
+	margin-bottom: 5em;
+	text-align: justify;
+	color: white;
+  font-family: sans-serif;
+	/*opacity: 1;*/
+}

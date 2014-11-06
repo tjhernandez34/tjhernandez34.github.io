@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title> {% if page.title %} {{ page.title }} {% endif %}</title>
+  <link rel="stylesheet" href="/stylesheets/reset.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link rel="stylesheet" href="/stylesheets/about.css" />
+  <link rel="stylesheet" href="/stylesheets/projects.css" />
+  <link rel="stylesheet" href="/stylesheets/resume.css" />
+  <link rel="stylesheet" href="/stylesheets/index.css" />
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Average+Sans|Karla|Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<nav>		
+		<ul>
+			<li class="logo"><a href="/"><img id="personal_logo"src="../images/transparent.gif" /></a></li>
+			<li class="nav"><a href="/about">About</a><li>
+			<li class="nav"><a href="/resume">Resume</a></li>
+			<li class="nav"><a href="/projects">Projects</a></li>
+		</ul>
+	</nav>
+	<div id="true_body">
+	{{ content }}
+</div> 
+<div id="contact">
+	<h2 id="lets_talk">let's talk</h2>
+	<ul>
+		<li><a href="mailto:tjhernandez34@gmail.com"><img class="contact_icon" src="../images/gmail_icon.png" alt="gmail"></a></li>
+		<li><a href="https://twitter.com/THern04"><img class="contact_icon" src="../images/twitter_icon.png" alt="twitter"></a></li>
+		<li><a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><img class="contact_icon" src="../images/linkedin_icon.png" alt="linkedin"></a></li>
+		<li><a href="https://github.com/tjhernandez34"><img class="contact_icon" src="../images/github_icon.png" alt="github"></a></li>
+	</ul>
+</div>
+<footer>
+      <p>&#x000A9; Travis Hernandez 2014 | All Rights Reserved. </p>
+ </footer>
+</body>
+
+</html>

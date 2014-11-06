@@ -1,0 +1,53 @@
+.contact_article {
+	margin-bottom: 2em;
+}
+
+.name {
+	font-size: 2em;
+}
+.resume_link {
+	text-decoration: none;
+	color: gray;
+}
+
+.resume_link:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.icon:hover {
+	border-radius: 100%;
+	background-color: gray;
+}
+
+.resume_titles {
+
+	font-size: 2.5em;
+	border-bottom: 1px solid black;
+	margin: 1em;
+}
+
+.resume_article p{
+	font-size: 1em;
+	width: 80%;
+	margin-bottom: 4em;
+	margin: 0 auto;
+}
+
+.resume_article {
+	clear: both;
+	font-size: 1.5em;
+	width: 80%;
+	margin-bottom: 4em;
+}
+
+table {
+	font-size: 1em;
+	width: 85%;
+	margin: 0 auto;
+}
+
+table td {
+	padding: .25em;
+}
+

@@ -1,0 +1,9 @@
+#intro {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#intro article p {
+	font-size: 2em;
+	margin-bottom: 1em;
+}

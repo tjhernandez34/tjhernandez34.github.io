@@ -1,0 +1,108 @@
+nav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  height: 4em;
+  background-color: #222529; 
+  opacity: 0.95;
+  z-index: 3;
+}
+
+nav .nav {
+  list-style: none;
+  float: right;
+  display: inline-block;
+}
+
+nav .nav:hover {
+  background-color: black;
+}
+
+nav .nav a {
+  display: block;
+  font-family: 'Average Sans', sans-serif;
+  color: white;
+  text-decoration: none;  
+  margin: 1em;
+  padding: .5em;
+}
+
+nav .nav a:hover {
+  background-color: black;
+}
+
+nav #personal_logo {
+  height: 3.75em;
+}
+
+.logo {
+  float: left;
+  list-style: none;
+  display: inline-block;
+}
+
+.logo:hover {
+  background-color: black;
+}
+
+#true_body {
+  margin-top: 10em;
+}
+
+p, h2, h3, th, td {
+  /*font-family: 'Andika', sans-serif;*/
+font-family: 'Average Sans', sans-serif;
+/*font-family: 'Montserrat', sans-serif;*/
+  }
+
+#contact {
+  clear: both;
+  width: 100%;
+}
+
+#lets_talk {
+  padding-top: 1em;
+  margin: 0;
+}
+
+#contact ul {
+  width: 41%;
+  margin: 0 auto;
+}
+
+#contact ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.contact_icon {
+  height: 5em;
+  margin: 1.5em;
+  border-radius: 100%;
+}
+
+.contact_icon:hover {
+  background-color: gray;
+}
+
+article {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  clear: both;
+  bottom: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  border-top: 2px solid gray;
+}
+
+footer p {
+  padding: 2em;
+  text-align: center;
+}
+

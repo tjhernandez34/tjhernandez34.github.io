@@ -1,0 +1,9 @@
+name: ""
+description: ""
+
+url: "www.travisjhernandez.com"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
