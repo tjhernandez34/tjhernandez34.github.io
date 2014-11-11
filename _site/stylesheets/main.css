@@ -67,7 +67,9 @@ font-family: 'Average Sans', sans-serif;
 }
 
 #contact ul {
-  width: 41%;
+  text-align: center;
+  margin-top: 1em;
+  width: 80%;
   margin: 0 auto;
 }
 

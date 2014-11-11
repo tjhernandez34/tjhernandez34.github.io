@@ -1,6 +1,6 @@
 #image_background {
-  background: url(../images/DSCF1825.JPG) 50% 0 repeat fixed; 
-  min-height: 1000px; 
+  background: url(../images/DSCF1825.JPG) 50% 0 no-repeat fixed; 
+  /*min-height: 1000px; */  
   background-size: 100% auto;
 /*  height: 1000px;*/ 
   margin: 0 auto; 
@@ -10,26 +10,66 @@
   }
 
 .cover_letter_article {
-	width: 20em;
+  display: block;
+  position: relative;
   font-size: 1.5em;
-  margin-left: 30em;
+  width: 30%
+} 
 
+.visible {
+  visibility: visible;
+  margin-right: 25%;
 }
 
-.cover_letter_article h2 {
-	text-align: center;
-	margin-top: 12em;
-	margin-bottom: 8em;
-	color: white;
-  font-family: sans-serif;
-	opacity: 1;
+
+.visible p {
+  text-align: center;
+}
+
+.hideable {
+  visibility: hidden;
+  display: none;
 }
 
 .cover_letter_article p {
-	margin-top: 5em;
-	margin-bottom: 5em;
-	text-align: justify;
 	color: white;
   font-family: sans-serif;
-	/*opacity: 1;*/
+}
+
+#arrows {
+  width: 3em;
+  height: 26em;
+  margin-right: 1em;
+  float: right;
+}
+.arrow {
+  display: block;
+  width: 3em;
+  border-radius: 100%;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: white;
+};  
+
+#up_arrow {
+  margin-bottom: 20em;
+}
+
+#down_arrow {
+  margin-top: 20em
+}
+
+#email_link {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+#email_link:hover {
+  text-decoration: underline
 }
