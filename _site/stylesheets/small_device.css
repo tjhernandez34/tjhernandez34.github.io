@@ -1,25 +1,15 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-		#image_background {
-	  background: url(../images/DSCF1825.JPG) 50% 0 no-repeat fixed;  
-	  background-size: 100% auto;
-	  margin: 0 auto; 
-	  width: 100%; 
-	  max-width: 1920px; 
-	  position: relative; 
+#image_background {
+	@media (min-width : 320px) {
+	  background-color: white;
 	}
 }
 
-
+/*#image_background {
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
+	@media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-/* Styles */
-	#image_background {
 	  background: url(../images/DSCF1825.JPG) 50% 0 no-repeat fixed;  
 	  background-size: 100% auto;
 	  margin: 0 auto; 
@@ -27,4 +17,4 @@ and (max-device-width : 1024px) {
 	  max-width: 1920px; 
 	  position: relative; 
 	}
-}
+}*/
