@@ -1,0 +1,85 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width: 480px) {
+	#image_background {
+	background: none;
+/* Styles */
+}
+
+#small_photo {
+	/*visibility: visible;*/
+	display: block;
+	height: 7em;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+#cover_letter {
+  display: block;
+  position: relative;
+  font-size: 1em;
+  width: 90%;
+  margin: 0 auto;
+} 
+
+#cover_letter * {
+  color:black;
+  font-family: sans-serif;
+  text-align: center;
+}
+#cover_letter p {
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
+#cover_letter p h1 {
+  font-size: .5em;
+}
+
+.cover_letter_title {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media (max-width: 1024px) {
+/* Styles */
+	#image_background {
+	background: none;
+/* Styles */
+}
+
+#small_photo {
+	/*visibility: visible;*/
+	display: block;
+	height: 7em;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+#cover_letter {
+  display: block;
+  position: relative;
+  font-size: 1em;
+  width: 90%;
+  margin: 0 auto;
+} 
+
+#cover_letter * {
+  color:black;
+  font-family: sans-serif;
+  text-align: center;
+}
+#cover_letter p {
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
+#cover_letter p h1 {
+  font-size: .5em;
+}
+
+.cover_letter_title {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+}

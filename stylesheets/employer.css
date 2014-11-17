@@ -8,6 +8,10 @@
   position: relative; 
   }
 
+#small_photo {
+  display: none;
+}
+
 #cover_letter {
   display: block;
   position: relative;
