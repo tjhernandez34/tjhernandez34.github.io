@@ -1,11 +1,11 @@
 /* Smartphones (portrait and landscape) ----------- */
 #image_background {
-	@media (min-width : 320px) {
+	@media (max-width : 480px) {
 	  background-color: white;
 	}
 }
 
-/*#image_background {
+#image_background {
 /* iPads (portrait and landscape) ----------- */
 	@media only screen 
 and (min-device-width : 768px) 
@@ -17,4 +17,4 @@ and (max-device-width : 1024px) {
 	  max-width: 1920px; 
 	  position: relative; 
 	}
-}*/
+}
