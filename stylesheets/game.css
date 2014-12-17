@@ -4,7 +4,7 @@
 	margin-bottom: 2em;
 }
 
-#play {
+#play, #play_again {
 	height: 3em;
 	width: 80%;
 	font-size: .5em;
@@ -49,7 +49,7 @@
 }
 
 .correct {
-	color: 'green';
+	color: #00FFFF;
 }
 
 .incorrect {

@@ -1,5 +1,6 @@
 var timer;
 var guess;
+var win = false;
 var numberCorrect = 0;
 var correctGuesses = [];
 var questions = [];
@@ -8,19 +9,23 @@ var Question = function(question, answer) {
     this.answer = answer;
 }; 
 
-
 function answeredAll() {
 	var numberAnswered = [];
 	var elems = document.getElementsByClassName( "answers" );
 	for (var i = 0; i < elems.length; i++) {
-		if (elems[i].innerText != "") {
-			numberAnswered.push(elems[i].innerText)
+		if (elems[i].innerText !== "") {
+			numberAnswered.push(elems[i].innerText);
 		}
 	}
 	if (numberAnswered.length === 5) {
-		$('.answers').css('background-color', 'green');
-		$('#score').css('color', 'green')
+		$('.answers').css('background-color', '#00FFFF');
+		$('#score').css('color', '#00FFFF');
 		clearInterval(timer);
+		alert("Ohhhh Yeeahhh!");
+		$('#answer_box').removeClass('visible');
+		$('#answer_box').addClass('hidden');
+		$('#play_again').removeClass('hidden');
+		$('#play_again').addClass('visible');
 		return true;
 	}	
 	else {
@@ -33,17 +38,14 @@ function fillUnansweredQuestions(questions) {
 
 	for (var l = 0; l < answeredQuestions.length; l++){
 		
-		if (answeredQuestions[l].innerText != "") {	
-			$('#answer' + l).css('background-color', 'green');		
+		if (answeredQuestions[l].innerText !== "") {	
+			$('#answer' + l).css('background-color', '#00FFFF');		
 		}else {
 			answeredQuestions[l].innerText = questions[l].answer;
 			$('#answer' + l).css('background-color', 'red');	
-			console.log("incorrect");
-			console.log(answeredQuestions[l]);
 		}
 		}
 	}
-
 
 function filledAnswers() {
 	var numberAnswered = [];
@@ -54,19 +56,17 @@ function filledAnswers() {
 	return numberAnswered;
 }
 
-
-
 function createQuestions(allText) {
   var allQuestionPairs = allText.split(/\r\n|\n/);
   var headers = allQuestionPairs[0].split(',');
-  $('#game_table').append('<tr><td class="table_title">'+ headers[0]+ '</td><td class="table_title">' + headers[1] + '</td></tr>')
+  $('#game_table').append('<tr><td class="table_title">'+ headers[0]+ '</td><td class="table_title">' + headers[1] + '</td></tr>');
   for (var i = 1; i < allQuestionPairs.length; i++) {
       var data = allQuestionPairs[i].split(',');
       var q = new Question(data[0], data[1]);
       questions.push(q);
   }
   for ( var j = 0; j < questions.length; j++){
-  	$('#game_table').append('<tr><td>'+ questions[j].question + '</td><td class="answers" id="answer'+ j + '"></td></tr>')
+  	$('#game_table').append('<tr><td>'+ questions[j].question + '</td><td class="answers" id="answer'+ j + '"></td></tr>');
   }  
 }
 
@@ -76,9 +76,8 @@ function startGame() {
 		$('#play').attr('class', 'hidden');
 		$('#answer_box').attr('class', 'visible');
 		checkGuess(questions);
-		// var win = false;
 		var counter = 60;
-		$('#answer0')
+		$('#answer0');
    timer = setInterval(function() {
    		win = answeredAll();
      counter--;
@@ -89,9 +88,14 @@ function startGame() {
          $('#timer')[0].innerText = "0:0" + counter;
       }
 			else if (counter <= 0) {
-         $('#timer')[0].innerText = "0:00";
-         clearInterval(timer);
-         fillUnansweredQuestions(questions);
+         	$('#timer')[0].innerText = "0:00";
+         	clearInterval(timer); 
+         	fillUnansweredQuestions(questions);
+         	alert("Ohhhh Noooo!");
+					$('#answer_box').removeClass('visible');
+					$('#answer_box').addClass('hidden');
+					$('#play_again').removeClass('hidden');
+					$('#play_again').addClass('visible');
          return false;
        }
       else {
@@ -101,15 +105,8 @@ function startGame() {
        }
      }, 1000);
 	});
-
-	// if (win) {
-	// 	$('#answer_box').removeClass('visible');
- // 		$('#answer_box').addClass('hidden');
- // 		$('#play_again').removeClass('hidden');
- // 		$('#play_again').addClass('visible');
-	// }
-
 }
+
 
 function checkGuess(questions) {
 	setInterval(function() { 
@@ -137,7 +134,7 @@ function gameOver() {
 $(document).ready(function() {
 
 startGame();
-
+gameOver();
   $.ajax({
           type: "GET",
           url: "../gameInfo.txt",
@@ -146,5 +143,4 @@ startGame();
        });
 
   });
-
 
