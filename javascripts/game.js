@@ -20,7 +20,6 @@ function answeredAll() {
 		$('.answers').css('background-color', 'green');
 		$('#score').css('color', 'green')
 		clearInterval(timer);
-		alert("Ohhhh yeeaahhhhhh!!!!");
 		return true;
 	}	
 	else {
