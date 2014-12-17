@@ -1,0 +1,54 @@
+#stats {
+	margin: 0 auto;
+	width: 50%;
+	margin-bottom: 2em;
+}
+
+#play {
+	height: 4em;
+	width: 8em;
+	font-size: .5em;
+	background-color: black;
+	border-radius: .2em;
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+
+#stats tr td{
+	text-align: center;
+	font-size: 2em;
+}
+#game_table {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.table_title {
+	text-align: center;
+	font-size: 2em;
+}
+
+#game_table tr td {
+	border: 1px solid black;
+	
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: visible;
+}
+
+.correct {
+	color: 'green';
+}
+
+.incorrect {
+	background-color: 'red';
+}
+.answers {
+
+}
