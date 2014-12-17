@@ -1,6 +1,7 @@
 var timer;
 var guess;
 var numberCorrect = 0;
+var correctGuesses = [];
 var questions = [];
 var Question = function(question, answer) {
     this.question = question;
@@ -75,7 +76,7 @@ function startGame() {
 		$('#play').attr('class', 'hidden');
 		$('#answer_box').attr('class', 'visible');
 		checkGuess(questions);
-		var win = false;
+		// var win = false;
 		var counter = 60;
 		$('#answer0')
    timer = setInterval(function() {
@@ -90,17 +91,23 @@ function startGame() {
 			else if (counter <= 0) {
          $('#timer')[0].innerText = "0:00";
          clearInterval(timer);
-         fillUnansweredQuestions(questions)
+         fillUnansweredQuestions(questions);
          return false;
        }
       else {
-      	console.log("WIN");
       	$('#game_table').attr('class', 'correct');
       	clearInterval(timer);
       	return false;
        }
      }, 1000);
 	});
+
+	// if (win) {
+	// 	$('#answer_box').removeClass('visible');
+ // 		$('#answer_box').addClass('hidden');
+ // 		$('#play_again').removeClass('hidden');
+ // 		$('#play_again').addClass('visible');
+	// }
 
 }
 
@@ -109,7 +116,8 @@ function checkGuess(questions) {
 		
 		guess = $('#answer_box').val();
 		for (var q = 0; q < questions.length; q++) {
-			if (questions[q].answer === guess) {
+			if (questions[q].answer === guess && correctGuesses.indexOf(guess) === -1) {
+				correctGuesses.push(questions[q].answer);
 				numberCorrect += 1;
 				$('#answer' + q)[0].innerText = questions[q].answer;
 				$('#score')[0].innerText =  numberCorrect.toString() + " / 5";
@@ -119,13 +127,16 @@ function checkGuess(questions) {
 	}, 100);
 }
 
+function gameOver() {
+ $('#play_again').click(function(event){
+		event.preventDefault();
+		location.reload();
+	});
+}
+
 $(document).ready(function() {
 
 startGame();
-
-
-
-
 
   $.ajax({
           type: "GET",
@@ -133,8 +144,6 @@ startGame();
           dataType: "text",
           success: function(data) {createQuestions(data);}
        });
-
-// Convert the NodeList to an Array
 
   });
 

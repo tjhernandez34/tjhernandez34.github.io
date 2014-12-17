@@ -5,8 +5,8 @@
 }
 
 #play {
-	height: 4em;
-	width: 8em;
+	height: 3em;
+	width: 80%;
 	font-size: .5em;
 	background-color: black;
 	border-radius: .2em;
@@ -15,9 +15,15 @@
 	outline: none;
 }
 
+#answer_box {
+	height: 2em;
+	font-size: .5em;
+}
+
 #stats tr td{
 	text-align: center;
 	font-size: 2em;
+	width: 33%;
 }
 #game_table {
 	margin: 0 auto;
