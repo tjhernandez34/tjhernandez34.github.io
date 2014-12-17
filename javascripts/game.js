@@ -17,7 +17,7 @@ function answeredAll() {
 			numberAnswered.push(elems[i].innerText);
 		}
 	}
-	if (numberAnswered.length === 5) {
+	if (numberAnswered.length === questions.length) {
 		$('.answers').css('background-color', '#00FFFF');
 		$('#score').css('color', '#00FFFF');
 		clearInterval(timer);
@@ -67,7 +67,8 @@ function createQuestions(allText) {
   }
   for ( var j = 0; j < questions.length; j++){
   	$('#game_table').append('<tr><td>'+ questions[j].question + '</td><td class="answers" id="answer'+ j + '"></td></tr>');
-  }  
+  }
+  $('#score')[0].innerText =  numberCorrect.toString() + " / " + questions.length.toString();  
 }
 
 function startGame() {
@@ -113,11 +114,11 @@ function checkGuess(questions) {
 		
 		guess = $('#answer_box').val();
 		for (var q = 0; q < questions.length; q++) {
-			if (questions[q].answer === guess && correctGuesses.indexOf(guess) === -1) {
+			if (questions[q].answer.toLowerCase() === guess.toLowerCase() && correctGuesses.indexOf(guess) === -1) {
 				correctGuesses.push(questions[q].answer);
 				numberCorrect += 1;
 				$('#answer' + q)[0].innerText = questions[q].answer;
-				$('#score')[0].innerText =  numberCorrect.toString() + " / 5";
+				$('#score')[0].innerText =  numberCorrect.toString() + " / " + questions.length.toString();
 				$('#answer_box').val("");
 			}
     }

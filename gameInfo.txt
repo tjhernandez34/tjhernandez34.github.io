@@ -2,5 +2,6 @@ Question,Answer
 What's my middle name? (Hint: in Spanish it's Santiago),James
 What's the last country I visited? (Starts with N),Nicaragua
 My favorite book is what? (Starts with 'One Hundred'),One Hundred Years of Solitude
-I like cooking in this Moroccan clay oven?,tagine
+I like cooking in a Moroccan clay oven; what is it called?,tagine
 Which sport did I play in college?,baseball
+It's rare to see me in a shirt that isn't this color,blue
