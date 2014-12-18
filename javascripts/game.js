@@ -1,13 +1,17 @@
-var timer;
-var guess;
+var timer, guess, minutesLeft, secondsLeft;
 var win = false;
 var numberCorrect = 0;
 var correctGuesses = [];
 var questions = [];
+var timeLimit = 90;
 var Question = function(question, answer) {
     this.question = question;
     this.answer = answer;
 }; 
+
+function addLeadingZero(number){
+	return (number < 10) ? ("0" + number) : number;
+ }
 
 function answeredAll() {
 	var numberAnswered = [];
@@ -77,16 +81,15 @@ function startGame() {
 		$('#play').attr('class', 'hidden');
 		$('#answer_box').attr('class', 'visible');
 		checkGuess(questions);
-		var counter = 60;
 		$('#answer0');
-   timer = setInterval(function() {
+		var counter = timeLimit;
+   	timer = setInterval(function() {
    		win = answeredAll();
-     counter--;
-			if (counter >= 10) {
-         $('#timer')[0].innerText = "0:" + counter;
-      }
-      else if (counter > 0) {
-         $('#timer')[0].innerText = "0:0" + counter;
+   		counter -= 1;
+   		minutesLeft = Math.floor(counter / 60);
+   		secondsLeft = counter % 60;
+			if (counter > 0) {
+         $('#timer')[0].innerText = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
       }
 			else if (counter <= 0) {
          	$('#timer')[0].innerText = "0:00";
@@ -140,7 +143,12 @@ gameOver();
           type: "GET",
           url: "../gameInfo.txt",
           dataType: "text",
-          success: function(data) {createQuestions(data);}
+          success: function(data) {
+						minutesLeft = Math.floor(timeLimit / timeLimit);
+						secondsLeft = timeLimit % 60;
+						$('#timer')[0].innerText = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
+          	createQuestions(data);
+          }
        });
 
   });
