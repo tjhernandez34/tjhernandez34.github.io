@@ -21,6 +21,7 @@ var winningChanges = function() {
 		$('#answer_box').addClass('hidden');
 		$('#play_again').removeClass('hidden');
 		$('#play_again').addClass('visible');
+		alert("Ohhhh, yeaaaahhhhh!!!")
 	}
 
 function answeredAll() {
