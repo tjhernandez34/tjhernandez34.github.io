@@ -13,7 +13,7 @@ function addLeadingZero(number){
 	return (number < 10) ? ("0" + number) : number;
  }
 
-var winningChanges = function() {
+function winningChanges() {
  		$('.answers').css('background-color', '#00FFFF');
 		$('#score').css('color', '#00FFFF');
 		clearInterval(timer);
