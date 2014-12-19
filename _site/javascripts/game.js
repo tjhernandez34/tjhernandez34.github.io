@@ -28,8 +28,8 @@ function answeredAll() {
 	var numberAnswered = [];
 	var elems = document.getElementsByClassName( "answers" );
 	for (var i = 0; i < elems.length; i++) {
-		if (elems[i].innerHTML !== "") {
-			numberAnswered.push(elems[i].innerHTML);
+		if (elems[i].textContent !== "") {
+			numberAnswered.push(elems[i].textContent);
 		}
 	}
 	if (numberAnswered.length === questions.length) {
@@ -45,10 +45,10 @@ function fillUnansweredQuestions(questions) {
 	var answeredQuestions = document.getElementsByClassName( "answers");
 	for (var l = 0; l < answeredQuestions.length; l++){
 		
-		if (answeredQuestions[l].innerHTML !== "") {	
+		if (answeredQuestions[l].textContent !== "") {	
 			$('#answer' + l).css('background-color', '#00FFFF');		
 		}else {
-			answeredQuestions[l].innerHTML = questions[l].answer;
+			answeredQuestions[l].textContent = questions[l].answer;
 			$('#answer' + l).css('background-color', 'red');	
 		}
 		}
@@ -75,11 +75,11 @@ function createQuestions(allText) {
   for ( var j = 0; j < questions.length; j++){
   	$('#game_table').append('<tr><td>'+ questions[j].question + '</td><td class="answers" id="answer'+ j + '"></td></tr>');
   }
-  $('#score')[0].innerHTML =  numberCorrect.toString() + " / " + questions.length.toString();  
+  $('#score')[0].textContent =  numberCorrect.toString() + " / " + questions.length.toString();  
 }
 
 function setScoreBoard(){
-  $('#score')[0].innerHTML =  numberCorrect.toString() + " / " + questions.length.toString();  
+  $('#score')[0].textContent =  numberCorrect.toString() + " / " + questions.length.toString();  
 }
 
 function startGame() {
@@ -96,10 +96,10 @@ function startGame() {
    		minutesLeft = Math.floor(counter / 60);
    		secondsLeft = counter % 60;
 			if (counter > 0) {
-         $('#timer')[0].innerHTML = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
+         $('#timer')[0].textContent = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
       }
 			else if (counter <= 0) {
-         	$('#timer')[0].innerHTML = "0:00";
+         	$('#timer')[0].textContent = "0:00";
          	clearInterval(timer); 
          	fillUnansweredQuestions(questions);
          	alert("Ohhhh Noooo!");
@@ -126,8 +126,8 @@ function checkGuess(questions) {
 			if (questions[q].answer.toLowerCase() === guess.toLowerCase() && correctGuesses.indexOf(guess) === -1) {
 				correctGuesses.push(questions[q].answer);
 				numberCorrect += 1;
-				$('#answer' + q)[0].innerHTML = questions[q].answer
-				$('#score')[0].innerHTML =  numberCorrect.toString() + " / " + questions.length.toString();
+				$('#answer' + q)[0].textContent = questions[q].answer
+				$('#score')[0].textContent =  numberCorrect.toString() + " / " + questions.length.toString();
 				$('#answer_box').val("");
 			}
     }
@@ -152,7 +152,7 @@ gameOver();
           success: function(data) {
 						minutesLeft = Math.floor(timeLimit / timeLimit);
 						secondsLeft = timeLimit % 60;
-						$('#timer')[0].innerHTML = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
+						$('#timer')[0].textContent = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
           	createQuestions(data);
 						setScoreBoard();
           }
