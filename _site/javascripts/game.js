@@ -13,23 +13,26 @@ function addLeadingZero(number){
 	return (number < 10) ? ("0" + number) : number;
  }
 
-function answeredAll() {
-	var numberAnswered = [];
-	var elems = document.getElementsByClassName( "answers" );
-	for (var i = 0; i < elems.length; i++) {
-		if (elems[i].innerText !== "") {
-			numberAnswered.push(elems[i].innerText);
-		}
-	}
-	if (numberAnswered.length === questions.length) {
-		$('.answers').css('background-color', '#00FFFF');
+var winningChanges = function() {
+ 		$('.answers').css('background-color', '#00FFFF');
 		$('#score').css('color', '#00FFFF');
 		clearInterval(timer);
 		$('#answer_box').removeClass('visible');
 		$('#answer_box').addClass('hidden');
 		$('#play_again').removeClass('hidden');
 		$('#play_again').addClass('visible');
-		alert("Ohhhh Yeeahhh!");
+	}
+
+function answeredAll() {
+	var numberAnswered = [];
+	var elems = document.getElementsByClassName( "answers" );
+	for (var i = 0; i < elems.length; i++) {
+		if (elems[i].innerHTML !== "") {
+			numberAnswered.push(elems[i].innerHTML);
+		}
+	}
+	if (numberAnswered.length === questions.length) {
+		winningChanges();
 		return true;
 	}	
 	else {
@@ -39,13 +42,12 @@ function answeredAll() {
 
 function fillUnansweredQuestions(questions) {
 	var answeredQuestions = document.getElementsByClassName( "answers");
-
 	for (var l = 0; l < answeredQuestions.length; l++){
 		
-		if (answeredQuestions[l].innerText !== "") {	
+		if (answeredQuestions[l].innerHTML !== "") {	
 			$('#answer' + l).css('background-color', '#00FFFF');		
 		}else {
-			answeredQuestions[l].innerText = questions[l].answer;
+			answeredQuestions[l].innerHTML = questions[l].answer;
 			$('#answer' + l).css('background-color', 'red');	
 		}
 		}
@@ -72,7 +74,11 @@ function createQuestions(allText) {
   for ( var j = 0; j < questions.length; j++){
   	$('#game_table').append('<tr><td>'+ questions[j].question + '</td><td class="answers" id="answer'+ j + '"></td></tr>');
   }
-  $('#score')[0].innerText =  numberCorrect.toString() + " / " + questions.length.toString();  
+  $('#score')[0].innerHTML =  numberCorrect.toString() + " / " + questions.length.toString();  
+}
+
+function setScoreBoard(){
+  $('#score')[0].innerHTML =  numberCorrect.toString() + " / " + questions.length.toString();  
 }
 
 function startGame() {
@@ -89,10 +95,10 @@ function startGame() {
    		minutesLeft = Math.floor(counter / 60);
    		secondsLeft = counter % 60;
 			if (counter > 0) {
-         $('#timer')[0].innerText = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
+         $('#timer')[0].innerHTML = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
       }
 			else if (counter <= 0) {
-         	$('#timer')[0].innerText = "0:00";
+         	$('#timer')[0].innerHTML = "0:00";
          	clearInterval(timer); 
          	fillUnansweredQuestions(questions);
          	alert("Ohhhh Noooo!");
@@ -114,14 +120,13 @@ function startGame() {
 
 function checkGuess(questions) {
 	setInterval(function() { 
-		
 		guess = $('#answer_box').val();
 		for (var q = 0; q < questions.length; q++) {
 			if (questions[q].answer.toLowerCase() === guess.toLowerCase() && correctGuesses.indexOf(guess) === -1) {
 				correctGuesses.push(questions[q].answer);
 				numberCorrect += 1;
-				$('#answer' + q)[0].innerText = questions[q].answer
-				$('#score')[0].innerText =  numberCorrect.toString() + " / " + questions.length.toString();
+				$('#answer' + q)[0].innerHTML = questions[q].answer
+				$('#score')[0].innerHTML =  numberCorrect.toString() + " / " + questions.length.toString();
 				$('#answer_box').val("");
 			}
     }
@@ -146,8 +151,9 @@ gameOver();
           success: function(data) {
 						minutesLeft = Math.floor(timeLimit / timeLimit);
 						secondsLeft = timeLimit % 60;
-						$('#timer')[0].innerText = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
+						$('#timer')[0].innerHTML = addLeadingZero(minutesLeft) + ":" + addLeadingZero(secondsLeft);
           	createQuestions(data);
+						setScoreBoard();
           }
        });
 
