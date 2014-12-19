@@ -25,11 +25,11 @@ function answeredAll() {
 		$('.answers').css('background-color', '#00FFFF');
 		$('#score').css('color', '#00FFFF');
 		clearInterval(timer);
-		alert("Ohhhh Yeeahhh!");
 		$('#answer_box').removeClass('visible');
 		$('#answer_box').addClass('hidden');
 		$('#play_again').removeClass('hidden');
 		$('#play_again').addClass('visible');
+		alert("Ohhhh Yeeahhh!");
 		return true;
 	}	
 	else {
@@ -120,7 +120,7 @@ function checkGuess(questions) {
 			if (questions[q].answer.toLowerCase() === guess.toLowerCase() && correctGuesses.indexOf(guess) === -1) {
 				correctGuesses.push(questions[q].answer);
 				numberCorrect += 1;
-				$('#answer' + q)[0].innerText = questions[q].answer;
+				$('#answer' + q)[0].innerText = questions[q].answer
 				$('#score')[0].innerText =  numberCorrect.toString() + " / " + questions.length.toString();
 				$('#answer_box').val("");
 			}
