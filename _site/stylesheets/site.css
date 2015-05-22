@@ -1,0 +1,124 @@
+#main {
+	margin-top: 62px;
+	margin-bottom: 30px;
+}
+
+.fa {
+	color: #000000;
+}
+
+.fa-github:hover {
+	color: #609;
+}
+.fa-envelope:hover {
+	color: #D14836;
+}
+.fa-twitter:hover {
+	color: #55ACEE;
+}
+.fa-linkedin:hover {
+	color: #287BBC;
+}
+
+#personal-logo {
+  height: 45px;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;	
+  width: auto;
+}
+
+.navbar-brand {
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+.subject {
+	text-transform: uppercase;;
+}
+
+.title {
+	margin: 20px auto;
+	width: 90%;
+}
+.project .title {
+	max-width: 350px;
+	border-bottom: 2px solid #232323;
+}
+
+#contact ul {
+	display: inline-block;
+	list-style: none;
+}
+
+#intro p, #about p  {
+	font-size: 20px;
+	text-align: justify;
+}
+
+#my-photo {
+	margin: 0 auto;
+	display: block;
+	border: 3px solid #232323;
+	border-radius: 100%;
+	max-width: 200px;
+	margin-bottom: 20px;
+}
+
+.screenshot {
+	max-width: 350px;
+	width: 95%;
+	border: 2px solid #232323;
+	border-radius: 5px;
+	margin: 0 auto;
+	display: block;
+}
+
+.project p {
+	display: block;
+	text-align: justify;
+	margin: 0 auto;
+	padding: 20px 10px;
+	max-width: 400px;
+	font-size: 16px;
+}
+
+#icons {
+	border-bottom: 1px solid #333333;
+}
+
+#icons .fa {
+	margin: 15px;
+}
+
+footer {
+	background-color: #222222;
+	height: 80px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	padding-top: 30px;
+}
+
+.contact-info {
+	margin: 0;
+}
+
+table {
+	margin: 0 auto;
+}
+/*@media all and (max-width:767px) {
+	.navbar-header button.navbar-toggle {
+		background-color: #FFFFFF;
+	}
+
+	.navbar-header button.navbar-toggle  span.icon-bar {
+		background-color: #333333;
+	}
+
+	.navbar-header button.navbar-toggle  span.icon-bar:hover {
+		background-color: #FFFFFF;
+	}
+}*/
+

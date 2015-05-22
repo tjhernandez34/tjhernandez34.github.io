@@ -1,111 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
   <meta charset=utf-8 />
   <title>  Travis Hernandez </title>
-  <link rel="stylesheet" href="/stylesheets/reset.css" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
-  <link rel="stylesheet" href="/stylesheets/about.css" />
-  <link rel="stylesheet" href="/stylesheets/projects.css" />
-  <link rel="stylesheet" href="/stylesheets/resume.css" />
-  <link rel="stylesheet" href="/stylesheets/index.css" />
-  <link rel="stylesheet" href="/stylesheets/game.css" />
-<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Average+Sans|Karla|Montserrat' rel='stylesheet' type='text/css'>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='/stylesheets/site.css' />
 </head>
 <body>
-	<nav>		
-		<ul>
-			<li class="logo"><a href="/"><img id="personal_logo"src="../images/transparent2.png" /></a></li>
-			<li class="nav"><a href="/about">About</a><li>
-			<li class="nav"><a href="/resume">Resum&eacute;</a></li>
-			<li class="nav"><a href="/projects">Projects</a></li>
-		</ul>
-	</nav>
-	<div id="true_body">
-		<section>
-		<article class="resume_article">
-			<div id="contact_info" class="left contact_article">
-				<p class="name">Travis Hernandez</p>
-				<p>Email: tjhernandez34@gmail.com</p>
-				<p>Phone: 360-333-0462</p>
-				<p>Github: <a class="resume_link" href="https://github.com/tjhernandez34">github.com/tjhernandez34</a></p>
-				<p>Resume: <a class="resume_link" href="/HernandezTravis_resume.pdf">PDF</a></p>	
-			</div>
-			<div class="right contact_article">
-				
-	  		
-			</div>
-		</article>
-	</section>
-	<section>
-			<article class="resume_article">
-				<h3 class="resume_titles">Summary</h3>
-				<p>Recent graduate of Dev Bootcamp interested in an apprenticeship or junior developer position. I like building things that I can be proud of. I am a learner and love being challenged. Let’s talk about working together to achieve our goals.</p>
-			</article>
-	</section>
-	<section>
-		<article class="resume_article">
-			<h3 class="resume_titles">Skills</h3>
-			<table>
-				<tr>
-					<td>LANGUAGES </td>
-					<td>Ruby, JavaScript(JQuery, AJAX), Objective-C</td>
-				</tr>
-				<tr>
-					<td>WEB FRAMEWORKS </td>
-					<td>Rails, Sinatra, Jekyll</td>
-				</tr>
-				<tr>
-					<td>TESTING FRAMEWORKS </td>
-					<td>RSpec, Jasmine, Travis CI</td>
-				</tr>
-				<tr>
-					<td>DATABASE DESIGN </td>
-					<td>SQL(PostgresSQL, SQLite3), ActiveRecord, NoSQL(Redis)</td>
-				</tr>
-				<tr>
-					<td>FRONT-END </td>
-					<td>HTML5, CSS3, HTML5 Canvas</td>
-				</tr>
-				<tr>
-					<td>VERSION CONTROL </td>
-					<td>Git</td>
-				</tr>
-				<tr>
-					<td>OTHER </td>
-					<td>AWS S3, OAuth, Heroku</td>
-				</tr>
-				<tr>
-					<td>METHODOLOGIES </td>
-					<td>Object-Oriented Design, TDD, BDD</td>
-				</tr>
-			</table> 
-		</article>
-	</section>
-		<section>
-			<article class="resume_article">
-				<h3 class="resume_titles">Education</h3>
-					<p class="name">University of Puget Sound, class of 2010</p>
-					<p>B.A. major: International Business, major: Foreign Language/International Affairs</p>
-			</article>
-	</section>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img id="personal-logo"src="../images/transparent2.png" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resum&eacute;</a></li>
+        <li><a href="/projects">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div id="main">
+		<div class='container'>
+				<div class='container'>
+	<div class="row text-center">
+			<h2 class='subject title'>Travis Hernandez</h2>
+	</div>
+	<div class='text-center row'>
+				<p class='contact-info lead'>tjhernandez34@gmail.com</p>
+				<p class='contact-info lead'>(360) 333-0462</p>
+				<p class='contact-info lead'><a class="resume_link" href="https://github.com/tjhernandez34">github.com/tjhernandez34</a></p>
+				<p class='contact-info lead'><a class="resume_link" href="/HernandezTravis_resume.pdf">full resume</a></p>	
+	</div>
+	<div class='row'>
+		<div class="row text-center">
+		<h3 class="title">Skills</h3>
+		</div>
+		<table>
+			<tr>
+				<td>LANGUAGES </td>
+				<td>Ruby, JavaScript, Objective-C</td>
+			</tr>
+			<tr>
+				<td>WEB FRAMEWORKS </td>
+				<td>Rails, Angular.js, Sinatra, Jekyll</td>
+			</tr>
+			<tr>
+				<td>TESTING FRAMEWORKS </td>
+				<td>RSpec, Jasmine, Travis CI, Jenkins</td>
+			</tr>
+			<tr>
+				<td>DATABASE DESIGN </td>
+				<td>SQL(PostgresSQL, SQLite3), ActiveRecord, NoSQL(Redis, Firebase)</td>
+			</tr>
+			<tr>
+				<td>FRONT-END </td>
+				<td>HTML5, CSS3, HTML5 Canvas</td>
+			</tr>
+			<tr>
+				<td>VERSION CONTROL </td>
+				<td>Git</td>
+			</tr>
+			<tr>
+				<td>OTHER </td>
+				<td>AWS S3, OAuth, Heroku</td>
+			</tr>
+			<tr>
+				<td>METHODOLOGIES </td>
+				<td>Object-Oriented Design, TDD, BDD</td>
+			</tr>
+		</table> 
+	</div>
+	<div class='row text-center'>
+			<h3 class="resume_titles">Education</h3><i class="fa fa-graduation-cap fa-4x"></i>
+				<p class="name">University of Puget Sound, class of 2010</p>
+				<p>B.A. major: International Business, major: Foreign Language/International Affairs</p>
+	</div>
 
+	</div>
 
-</div> 
-<div id="contact">
-	<h2 id="lets_talk">let's talk</h2>
-	<ul>
-		<li><a href="mailto:tjhernandez34@gmail.com"><img class="contact_icon" src="../images/gmail_icon.png" alt="gmail"></a></li>
-		<li><a href="https://twitter.com/THern04"><img class="contact_icon" src="../images/twitter_icon.png" alt="twitter"></a></li>
-		<li><a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><img class="contact_icon" src="../images/linkedin_icon.png" alt="linkedin"></a></li>
-		<li><a href="https://github.com/tjhernandez34"><img class="contact_icon" src="../images/github_icon.png" alt="github"></a></li>
-	</ul>
-</div>
-<footer>
-      <p>&#x000A9; Travis Hernandez 2014 | All Rights Reserved. </p>
- </footer>
+		</div>
+		<div id="contact" class='container'>
+			<div id="lets-talk" class='row text-center'>
+				<h2>let's talk</h2>
+			</div>
+			<div id="icons" class="row text-center">	
+						<a href="mailto:tjhernandez34@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+						<a href="https://twitter.com/THern04"><i class="fa fa-twitter fa-4x"></i></a>
+						<a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><i class="fa fa-linkedin fa-4x"></i></a>
+						<a href="https://github.com/tjhernandez34"><i class="fa fa-github fa-4x"></i></a>
+			</div>
+		</div>
+</div>		
+		<footer class="text-center col-md-12 col-sm-12">
+	    <p class="copyright">&#x000A9; Travis Hernandez 2015 | All Rights Reserved.</p>
+	 	</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ </div>
 </body>
 
 </html>

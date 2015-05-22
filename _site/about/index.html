@@ -1,56 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
   <meta charset=utf-8 />
   <title>  Travis Hernandez </title>
-  <link rel="stylesheet" href="/stylesheets/reset.css" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
-  <link rel="stylesheet" href="/stylesheets/about.css" />
-  <link rel="stylesheet" href="/stylesheets/projects.css" />
-  <link rel="stylesheet" href="/stylesheets/resume.css" />
-  <link rel="stylesheet" href="/stylesheets/index.css" />
-  <link rel="stylesheet" href="/stylesheets/game.css" />
-<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Average+Sans|Karla|Montserrat' rel='stylesheet' type='text/css'>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='/stylesheets/site.css' />
 </head>
 <body>
-	<nav>		
-		<ul>
-			<li class="logo"><a href="/"><img id="personal_logo"src="../images/transparent2.png" /></a></li>
-			<li class="nav"><a href="/about">About</a><li>
-			<li class="nav"><a href="/resume">Resum&eacute;</a></li>
-			<li class="nav"><a href="/projects">Projects</a></li>
-		</ul>
-	</nav>
-	<div id="true_body">
-	<div id="about">
-	<h2>ABOUT ME</h2>
-	<img id="my_photo" src="../images/instanbulsmall.jpg" />
-	<article id="about_me">
-			<p>I’m a learner. Learning is one of the things I value most in life. Whether it is on a professional or personal level, it is important that a person improves their skill set and grows.</p>
-			
-			<p>For the last few months, I have put everything I have into learning to be a computer programmer. As with all things, you deal with success and also failures, but it is the times that you fail that you are able to learn and become better at what you do.</p>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img id="personal-logo"src="../images/transparent2.png" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resum&eacute;</a></li>
+        <li><a href="/projects">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div id="main">
+		<div class='container'>
+			<div id="about" class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+	<div class="row text-center">
+		<h2 class="subject title">about me</h2>
+	</div>
+	<div class="row">
+		<img id="my-photo" src="../images/instanbulsmall.jpg" />
+	</div>
+	<div class="row">
+				<p>I’m a learner. Learning is one of the things I value most in life. Whether it is on a professional or personal level, it is important that a person improves their skill set and grows.</p>
+				
+				<p>For the last few months, I have put everything I have into learning to be a computer programmer. As with all things, you deal with success and also failures, but it is the times that you fail that you are able to learn and become better at what you do.</p>
 
-			<p>This is an important lesson to take with you in life and I feel my ability to keep going until I accomplish what I want to accomplish is what sets me apart as an individual. I hate failure more than I like success, and I work incredibly hard to put everything I can into the things I am passionate about.</p>
+				<p>This is an important lesson to take with you in life and I feel my ability to keep going until I accomplish what I want to accomplish is what sets me apart as an individual. I hate failure more than I like success, and I work incredibly hard to put everything I can into the things I am passionate about.</p>
 
-			<p>I want to become the best developer that I can be, while also continuously learning new technologies and techniques in order to fulfill this goal.</p>
-	</article>
-		
+				<p>I want to become the best developer that I can be, while also continuously learning new technologies and techniques in order to fulfill this goal.</p>	
+	</div>
 </div>
-</div> 
-<div id="contact">
-	<h2 id="lets_talk">let's talk</h2>
-	<ul>
-		<li><a href="mailto:tjhernandez34@gmail.com"><img class="contact_icon" src="../images/gmail_icon.png" alt="gmail"></a></li>
-		<li><a href="https://twitter.com/THern04"><img class="contact_icon" src="../images/twitter_icon.png" alt="twitter"></a></li>
-		<li><a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><img class="contact_icon" src="../images/linkedin_icon.png" alt="linkedin"></a></li>
-		<li><a href="https://github.com/tjhernandez34"><img class="contact_icon" src="../images/github_icon.png" alt="github"></a></li>
-	</ul>
-</div>
-<footer>
-      <p>&#x000A9; Travis Hernandez 2014 | All Rights Reserved. </p>
- </footer>
+		</div>
+		<div id="contact" class='container'>
+			<div id="lets-talk" class='row text-center'>
+				<h2>let's talk</h2>
+			</div>
+			<div id="icons" class="row text-center">	
+						<a href="mailto:tjhernandez34@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+						<a href="https://twitter.com/THern04"><i class="fa fa-twitter fa-4x"></i></a>
+						<a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><i class="fa fa-linkedin fa-4x"></i></a>
+						<a href="https://github.com/tjhernandez34"><i class="fa fa-github fa-4x"></i></a>
+			</div>
+		</div>
+</div>		
+		<footer class="text-center col-md-12 col-sm-12">
+	    <p class="copyright">&#x000A9; Travis Hernandez 2015 | All Rights Reserved.</p>
+	 	</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ </div>
 </body>
 
 </html>

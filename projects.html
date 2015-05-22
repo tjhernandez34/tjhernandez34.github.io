@@ -2,28 +2,28 @@
 layout: default
 title: Travis Hernandez
 ---
-	<section>
-		<article>
-			<h2>PROJECTS</h2>
-			<div id="images">
-				<div class="left">
-					<h3 class="project_titles" >Property Manager
-					<a href="https://github.com/tjhernandez34/"><img class="github_icon" src="../images/github_icon.png"/></a></h3>
-					
-					<img class="screenshot_image" src="../images/propertymanager.png" alt="Property Manager"/>	
-					
-					<p>This is an app I designed and built for use a local property management company, in order to streamline the accounting measures currently in place there. It uses Rails, PostgresSQL, and currently has an iOS app that is in development.</p>
-					
-				</div>
-				<div class="right">
-					<h3 class="project_titles">SNPy: Genomics
-					<a href="https://github.com/tjhernandez34/SNPy"><img class="github_icon" src="../images/github_icon.png"/></a></h3>
-					
-					<a href="http://snpy.herokuapp.com/"><img class="screenshot_image" src="../images/snpy_ss.png" alt="SNPy Screenshot"/></a>
-					
-					<p>Rails application that analyzes a 23andMe sequenced genome for known risk-factors. Utilizes an algorithm to accurately analyze and pinpoint risk factors by comparing the user's genome (uploaded as a txt file) with a database of known key-value pair risk-factors. Then displays a self-explanatory data visualization outlining the users risk-factors and their severity using JavaScript D3.</p>	
-				
-				</div>
-			</div>
-		</article>
-	</section>
+	<div class="row text-center">
+			<h2 class='subject title'>projects</h2>
+	</div>
+	<div class='project col-md-4 col-md-offset-2'>
+		<div class="row text-center">
+					<h3 class="title" >Property Manager</h3>
+		</div>
+		<div class="row">	
+			<img class="screenshot" src="../images/propertymanager.png" alt="Property Manager"/>		
+		</div>
+		<div class="row">		
+			<p>This is an app I designed and built for use a local property management company, in order to streamline the accounting measures currently in place there. It logs account transactions, as well as manages rental and employee information. It uses Ruby on Rails and PostgresSQL.</p>
+		</div>		
+	</div>
+	<div class='project col-md-4'>
+		<div class="row text-center">
+				<h3 class="title">SNPy: Genomics</h3>
+		</div>
+		<div class="row">
+			<img class="screenshot" src="../images/snpy_ss.png" alt="SNPy Screenshot"/>
+		</div>
+		<div class="row">		
+			<p>Rails application that analyzes a 23andMe sequenced genome for known risk-factors. Utilizes an algorithm to accurately analyze and pinpoint risk factors by comparing the user's genome (uploaded as a txt file) with a database of known key-value pair risk-factors. Then displays a self-explanatory data visualization outlining the users risk-factors and their severity using JavaScript D3.</p>	
+		</div>	
+	</div>

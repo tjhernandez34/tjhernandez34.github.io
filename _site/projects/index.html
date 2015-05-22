@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
   <meta charset=utf-8 />
   <title>  Travis Hernandez </title>
-  <link rel="stylesheet" href="/stylesheets/reset.css" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
-  <link rel="stylesheet" href="/stylesheets/about.css" />
-  <link rel="stylesheet" href="/stylesheets/projects.css" />
-  <link rel="stylesheet" href="/stylesheets/resume.css" />
-  <link rel="stylesheet" href="/stylesheets/index.css" />
-  <link rel="stylesheet" href="/stylesheets/game.css" />
-<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Average+Sans|Karla|Montserrat' rel='stylesheet' type='text/css'>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='/stylesheets/site.css' />
 </head>
 <body>
-	<nav>		
-		<ul>
-			<li class="logo"><a href="/"><img id="personal_logo"src="../images/transparent2.png" /></a></li>
-			<li class="nav"><a href="/about">About</a><li>
-			<li class="nav"><a href="/resume">Resum&eacute;</a></li>
-			<li class="nav"><a href="/projects">Projects</a></li>
-		</ul>
-	</nav>
-	<div id="true_body">
-		<section>
-		<article>
-			<h2>PROJECTS</h2>
-			<div id="images">
-				<div class="left">
-					<h3 class="project_titles" >Property Manager
-					<a href="https://github.com/tjhernandez34/PropertyManagerRails"><img class="github_icon" src="../images/github_icon.png"/></a></h3>
-					
-					<img class="screenshot_image" src="../images/propertymanager.png" alt="Property Manager"/>	
-					
-					<p>This is an app I designed and built for use a local property management company, in order to streamline the accounting measures currently in place there. Rather than create a closed-source project, I opened it up in order to enable others to benefit from this product. It uses Rails, PostgresSQL, and currently has an iOS app that is in development.</p>
-					
-				</div>
-				<div class="right">
-					<h3 class="project_titles">SNPy: Genomics
-					<a href="https://github.com/tjhernandez34/SNPy"><img class="github_icon" src="../images/github_icon.png"/></a></h3>
-					
-					<a href="http://snpy.herokuapp.com/"><img class="screenshot_image" src="../images/snpy_ss.png" alt="SNPy Screenshot"/></a>
-					
-					<p>Rails application that analyzes a 23andMe sequenced genome for known risk-factors. Utilizes an algorithm to accurately analyze and pinpoint risk factors by comparing the user's genome (uploaded as a txt file) with a database of known key-value pair risk-factors. Then displays a self-explanatory data visualization outlining the users risk-factors and their severity using JavaScript D3.</p>	
-				
-				</div>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img id="personal-logo"src="../images/transparent2.png" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resum&eacute;</a></li>
+        <li><a href="/projects">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div id="main">
+		<div class='container'>
+				<div class="row text-center">
+			<h2 class='subject title'>projects</h2>
+	</div>
+	<div class='project col-md-4 col-md-offset-2'>
+		<div class="row text-center">
+					<h3 class="title" >Property Manager</h3>
+		</div>
+		<div class="row">	
+			<img class="screenshot" src="../images/propertymanager.png" alt="Property Manager"/>		
+		</div>
+		<div class="row">		
+			<p>This is an app I designed and built for use a local property management company, in order to streamline the accounting measures currently in place there. It logs account transactions, as well as manages rental and employee information. It uses Ruby on Rails and PostgresSQL.</p>
+		</div>		
+	</div>
+	<div class='project col-md-4'>
+		<div class="row text-center">
+				<h3 class="title">SNPy: Genomics</h3>
+		</div>
+		<div class="row">
+			<img class="screenshot" src="../images/snpy_ss.png" alt="SNPy Screenshot"/>
+		</div>
+		<div class="row">		
+			<p>Rails application that analyzes a 23andMe sequenced genome for known risk-factors. Utilizes an algorithm to accurately analyze and pinpoint risk factors by comparing the user's genome (uploaded as a txt file) with a database of known key-value pair risk-factors. Then displays a self-explanatory data visualization outlining the users risk-factors and their severity using JavaScript D3.</p>	
+		</div>	
+	</div>
+
+		</div>
+		<div id="contact" class='container'>
+			<div id="lets-talk" class='row text-center'>
+				<h2>let's talk</h2>
 			</div>
-		</article>
-	</section>
-</div> 
-<div id="contact">
-	<h2 id="lets_talk">let's talk</h2>
-	<ul>
-		<li><a href="mailto:tjhernandez34@gmail.com"><img class="contact_icon" src="../images/gmail_icon.png" alt="gmail"></a></li>
-		<li><a href="https://twitter.com/THern04"><img class="contact_icon" src="../images/twitter_icon.png" alt="twitter"></a></li>
-		<li><a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><img class="contact_icon" src="../images/linkedin_icon.png" alt="linkedin"></a></li>
-		<li><a href="https://github.com/tjhernandez34"><img class="contact_icon" src="../images/github_icon.png" alt="github"></a></li>
-	</ul>
-</div>
-<footer>
-      <p>&#x000A9; Travis Hernandez 2014 | All Rights Reserved. </p>
- </footer>
+			<div id="icons" class="row text-center">	
+						<a href="mailto:tjhernandez34@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+						<a href="https://twitter.com/THern04"><i class="fa fa-twitter fa-4x"></i></a>
+						<a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><i class="fa fa-linkedin fa-4x"></i></a>
+						<a href="https://github.com/tjhernandez34"><i class="fa fa-github fa-4x"></i></a>
+			</div>
+		</div>
+</div>		
+		<footer class="text-center col-md-12 col-sm-12">
+	    <p class="copyright">&#x000A9; Travis Hernandez 2015 | All Rights Reserved.</p>
+	 	</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ </div>
 </body>
 
 </html>
