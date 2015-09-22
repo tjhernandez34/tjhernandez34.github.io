@@ -9,48 +9,52 @@
   <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='/stylesheets/site.css' />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"><img id="personal-logo"src="../images/transparent2.png" /></a>
+  <div id="page-wrapper">
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img id="personal-logo"src="../images/transparent2.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/about">About</a></li>
+          <li><a href="/resume">Resum&eacute;</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about">About</a></li>
-        <li><a href="/resume">Resum&eacute;</a></li>
-        <li><a href="/projects">Projects</a></li>
-      </ul>
+  </nav>
+  	<div id="main">
+  		<div class='container'>
+  			{{ content }}
+  		</div>
+  		<div id="contact" class='container'>
+  			<div id="lets-talk" class='row text-center'>
+  				<h2>let's talk</h2>
+  			</div>
+  			<div id="icons" class="row text-center">	
+  						<a href="mailto:tjhernandez34@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+  						<a href="https://twitter.com/THern04"><i class="fa fa-twitter fa-4x"></i></a>
+  						<a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><i class="fa fa-linkedin fa-4x"></i></a>
+  						<a href="https://github.com/tjhernandez34"><i class="fa fa-github fa-4x"></i></a>
+  			</div>
+  		</div>
+    </div>		
+  		<footer class="text-center col-lg-12 col-md-12 col-sm-12">
+  	    <p class="copyright">&#x000A9; Travis Hernandez 2015 | All Rights Reserved.</p>
+  	 	</footer>
     </div>
   </div>
-</nav>
-	<div id="main">
-		<div class='container'>
-			{{ content }}
-		</div>
-		<div id="contact" class='container'>
-			<div id="lets-talk" class='row text-center'>
-				<h2>let's talk</h2>
-			</div>
-			<div id="icons" class="row text-center">	
-						<a href="mailto:tjhernandez34@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
-						<a href="https://twitter.com/THern04"><i class="fa fa-twitter fa-4x"></i></a>
-						<a href="https://www.linkedin.com/pub/travis-hernandez/1b/34b/623"><i class="fa fa-linkedin fa-4x"></i></a>
-						<a href="https://github.com/tjhernandez34"><i class="fa fa-github fa-4x"></i></a>
-			</div>
-		</div>
-</div>		
-		<footer class="text-center col-lg-12 col-md-12 col-sm-12">
-	    <p class="copyright">&#x000A9; Travis Hernandez 2015 | All Rights Reserved.</p>
-	 	</footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- // <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
  </div>
 </body>
