@@ -1,11 +1,3 @@
-html, body {
-	height: 100%;
-}
-
-body {
-	min-height: 100%;
-}	
-
 #main {
 	margin-top: 62px;
 	margin-bottom: 30px;
@@ -103,6 +95,7 @@ body {
 footer {
 	background-color: #222222;
 	height: 80px;
+	overflow: auto;
 }
 
 .copyright {
@@ -130,4 +123,7 @@ table {
 		background-color: #FFFFFF;
 	}
 }*/
+.vc {
+	border-radius: 10px;
+}
 
