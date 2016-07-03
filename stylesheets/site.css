@@ -127,3 +127,10 @@ table {
 	border-radius: 10px;
 }
 
+.makestuff-logo {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	max-width: 300px;
+	width: auto;
+	height: auto;
+}
