@@ -2,6 +2,10 @@
 	margin-top: 62px;
 	margin-bottom: 30px;
 	overflow: auto;
+	min-height: 72vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .fa {
